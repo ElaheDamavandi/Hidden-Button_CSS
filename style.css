@@ -1,0 +1,41 @@
+.container{
+    height: 90vh;
+    background-color: rgb(192, 129, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: width 2s;
+}
+
+.search input{
+    position: absolute;
+    border: 0;
+    width: 45px;
+    transition: width 2s;
+}
+
+.search button{
+    position: absolute;
+    padding: 5px;
+    background-color: #fff;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    color: rgba(0, 0, 0, 0.753);
+    transition: transform 2s;
+}
+
+.search.active input{
+    width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(198px);
+}
